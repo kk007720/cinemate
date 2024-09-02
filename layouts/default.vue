@@ -82,7 +82,7 @@
                   route.name === 'now-playing'
                     ? 'text-blue-700 '
                     : 'text-gray-900 '
-                }block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`"
+                }block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`"
               >
                 現正放映中
               </NuxtLink>
@@ -94,19 +94,19 @@
                   route.name === 'top-rated'
                     ? 'text-blue-700 '
                     : 'text-gray-900 '
-                }block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`"
+                }block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0`"
               >
                 最高評分
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
-                to="/upcoming"
+                to="/up-coming"
                 :class="`${
-                  route.name === 'upcoming'
+                  route.name === 'up-coming'
                     ? 'text-blue-700 '
                     : 'text-gray-900 '
-                } block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`"
+                }block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0`"
               >
                 即將上映
               </NuxtLink>
