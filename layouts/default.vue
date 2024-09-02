@@ -8,7 +8,7 @@
           href="/"
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src="/logo.png" class="h-8" alt="Cinemate Logo" />
+          <img src="/logo.png" class="h-12" alt="Cinemate Logo" />
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
           >
@@ -48,50 +48,67 @@
             <li>
               <NuxtLink
                 to="/"
-                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
+                :class="`${
+                  route.name === 'index' ? 'text-blue-700 ' : 'text-gray-900 '
+                }block py-2 px-3  rounded md:bg-transparent md:p-0 dark:text-white md:dark:text-blue-500`"
               >
-                Home
+                主頁
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 to="/search"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                :class="`${
+                  route.name === 'search' ? 'text-blue-700 ' : 'text-gray-900 '
+                }block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0`"
               >
-                Search
+                搜尋
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 to="/popular"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                :class="`${
+                  route.name === 'popular' ? 'text-blue-700 ' : 'text-gray-900 '
+                }block py-2 px-3 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`"
               >
-                Popular
+                熱門
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 to="/now-playing"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                :class="`${
+                  route.name === 'now-playing'
+                    ? 'text-blue-700 '
+                    : 'text-gray-900 '
+                }block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`"
               >
-                Now Playing
+                現正放映中
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 to="/top-rated"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                :class="`${
+                  route.name === 'top-rated'
+                    ? 'text-blue-700 '
+                    : 'text-gray-900 '
+                }block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`"
               >
-                Top Rated
+                最高評分
               </NuxtLink>
             </li>
             <li>
               <NuxtLink
                 to="/upcoming"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                :class="`${
+                  route.name === 'upcoming'
+                    ? 'text-blue-700 '
+                    : 'text-gray-900 '
+                } block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`"
               >
-                UpComing
+                即將上映
               </NuxtLink>
             </li>
           </ul>
@@ -104,3 +121,7 @@
     </main>
   </div>
 </template>
+
+<script setup>
+  const route = useRoute();
+</script>
