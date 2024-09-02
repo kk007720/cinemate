@@ -14,6 +14,7 @@ export default defineEventHandler(async (event) => {
     },
     query: {
       query: searchTerm,
+      language: 'zh-TW',
     },
   });
 
@@ -25,6 +26,7 @@ export default defineEventHandler(async (event) => {
     },
     query: {
       query: searchTerm,
+      language: 'zh-TW',
     },
   });
   return { movies, series };

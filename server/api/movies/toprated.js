@@ -10,6 +10,9 @@ export default defineEventHandler(async (event) => {
       accept: 'application/json',
       Authorization: `Bearer ${AccessToken}`,
     },
+    query: {
+      language: 'zh-TW',
+    },
   });
 
   const topRatedSeries = await $fetch(topRatedSeriesUrl, {
@@ -17,6 +20,9 @@ export default defineEventHandler(async (event) => {
     headers: {
       accept: 'application/json',
       Authorization: `Bearer ${AccessToken}`,
+    },
+    query: {
+      language: 'zh-TW',
     },
   });
 

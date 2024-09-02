@@ -23,7 +23,7 @@
           aria-controls="navbar-default"
           aria-expanded="false"
         >
-          <span class="sr-only">Open main menu</span>
+          <span class="sr-only">選單</span>
           <svg
             class="w-5 h-5"
             aria-hidden="true"

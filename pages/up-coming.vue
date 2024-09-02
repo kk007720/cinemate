@@ -1,12 +1,14 @@
 <template>
-  <div>
+  <div class="md:p-6 p-3">
     <section>
       <h1
-        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+        class="mb-4 md:text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white"
       >
-        Upcoming Movies
+        即將上映電影
       </h1>
-      <ul class="grid grid-cols-5 gap-2">
+      <ul
+        class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4"
+      >
         <li v-for="mov in movies" :key="mov.id">
           <MovieCard
             :poster_path="mov.poster_path"
@@ -18,8 +20,6 @@
             :item="mov"
           ></MovieCard>
         </li>
-        <br />
-        <br />
       </ul>
     </section>
   </div>
