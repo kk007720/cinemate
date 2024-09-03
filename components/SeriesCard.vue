@@ -7,10 +7,10 @@
       :to="`/item/${name}`"
       class="flex-shrink-0"
     >
-      <NuxtImg
+      <img
         class="rounded-t-lg w-full object-cover"
         :src="`${imageSiteUrl}${poster_path}`"
-        alt="itemImage"
+        :alt="poster_path ? '' : undefined"
       />
     </NuxtLink>
     <div class="p-5 flex flex-col flex-grow">

@@ -3,7 +3,7 @@
     class="flex flex-col h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
   >
     <NuxtLink @click="changeItemState(item)" :to="`/item/${id}`">
-      <NuxtImg
+      <img
         class="rounded-t-lg w-full object-cover"
         :src="`${imageSiteUrl}${poster_path}`"
         :alt="poster_path ? '' : undefined"
