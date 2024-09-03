@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="md:p-6 p-3">
     <MovieCard
       v-if="item.release_date"
       :poster_path="item.poster_path"
