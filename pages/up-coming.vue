@@ -26,6 +26,10 @@
 </template>
 
 <script setup>
+  useSeoMeta({
+    title: '即將上映',
+  });
+
   const movies = useState(() => []);
 
   const { data } = useFetch('/api/movies/upcoming', {

@@ -88,6 +88,10 @@
 </template>
 
 <script setup>
+  useSeoMeta({
+    title: '搜尋電影、電視劇',
+  });
+
   const searchTerm = useState('searchTerm', () => '');
 
   const movies = useState(() => []);

@@ -26,6 +26,10 @@
 </template>
 
 <script setup>
+  useSeoMeta({
+    title: '***現正放映中***',
+  });
+
   const movies = useState(() => []);
   const { data } = await useFetch('/api/movies/nowplaying', {
     transform: (data) => {

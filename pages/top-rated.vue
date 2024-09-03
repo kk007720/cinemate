@@ -49,6 +49,10 @@
 </template>
 
 <script setup>
+  useSeoMeta({
+    title: '最高評分',
+  });
+
   const movies = useState(() => []);
   const series = useState(() => []);
 

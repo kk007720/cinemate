@@ -49,6 +49,10 @@
 </template>
 
 <script setup>
+  useSeoMeta({
+    title: '熱門電影、電視劇',
+  });
+
   const movies = useState(() => []);
   const series = useState(() => []);
 

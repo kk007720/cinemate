@@ -49,6 +49,11 @@
 </template>
 
 <script setup>
+  useSeoMeta({
+    title: 'Cinemate',
+    ogTitle: 'Cinemate',
+    description: '精選電影賞析, made by kk.kuo',
+  });
   const movies = useState(() => []);
   const series = useState(() => []);
 
